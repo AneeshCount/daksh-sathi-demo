@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { -webkit-tap-highlight-color: transparent; }
+body { @apply bg-slate-50 text-slate-900 font-sans antialiased; }
+
+/* CSS masonry via columns — true masonry, no JS layout cost */
+.masonry { column-gap: 0.75rem; }
+@media (min-width: 480px) { .masonry { column-count: 2; } }
+@media (min-width: 768px) { .masonry { column-count: 3; } }
+.masonry > * { break-inside: avoid; margin-bottom: 0.75rem; }
