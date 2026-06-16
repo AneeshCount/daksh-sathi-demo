@@ -1,0 +1,14 @@
+{
+  "name": "Daksh Sathi — Sewa + Suraksha",
+  "short_name": "Daksh Sathi",
+  "description": "Hyperlocal marketplace for Madhya Pradesh. 33 services, 0% commission.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0a3d26",
+  "theme_color": "#0f5132",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
