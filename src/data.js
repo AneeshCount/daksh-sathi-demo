@@ -36,31 +36,40 @@ export const PARTNERS = [
   {
     name: 'Ramesh Vishwakarma', trade: 'Carpenter Sathi', rating: 4.8, jobs: 212,
     verified: true, platinum: true, km: 1.2, edu: '10th Pass · 18 yrs experience',
-    h: 220, work: ['Modular kitchen', 'Door & lock fitting', 'Custom wardrobe'],
+    from: 250, hue: 'from-amber-400 to-orange-500',
+    work: ['Modular kitchen', 'Door & lock fitting', 'Custom wardrobe'],
   },
   {
     name: 'Sunita Devi', trade: 'Salon & Mehendi Artist', rating: 4.9, jobs: 156,
     verified: true, platinum: false, km: 0.8, edu: 'Diploma · Beautician',
-    h: 280, work: ['Bridal mehendi', 'Home facial', 'Hair spa'],
+    from: 500, hue: 'from-pink-400 to-rose-500',
+    work: ['Bridal mehendi', 'Home facial', 'Hair spa'],
   },
   {
     name: 'Imran Khan', trade: 'AC & Refrigerator Mechanic', rating: 4.6, jobs: 98,
     verified: true, platinum: false, km: 2.4, edu: 'ITI · Refrigeration',
-    h: 200, work: ['Gas charging', 'Deep cleaning'],
+    from: 350, hue: 'from-sky-400 to-cyan-500',
+    work: ['Gas charging', 'Deep cleaning'],
   },
   {
     name: 'Dr. Anjali Mehra', trade: 'Doctor Consultant', rating: 4.95, jobs: 540,
     verified: true, platinum: true, km: 0, edu: 'MBBS, MD · Video consult', webrtc: true,
-    h: 240, work: ['General medicine', 'Follow-up Rx'],
+    from: 400, hue: 'from-violet-400 to-purple-500',
+    work: ['General medicine', 'Follow-up Rx'],
   },
   {
     name: 'Mahesh Patel', trade: 'Plumber Sathi', rating: 4.7, jobs: 134,
     verified: true, platinum: false, km: 1.6, edu: 'Self-trained · 12 yrs',
-    h: 190, work: ['Leak detection', 'Valve & pipeline'],
+    from: 200, hue: 'from-teal-400 to-emerald-500',
+    work: ['Leak detection', 'Valve & pipeline'],
   },
   {
     name: 'Vikram Yadav', trade: 'Bike Taxi Sathi', rating: 4.5, jobs: 1180,
     verified: true, platinum: true, km: 0.5, edu: 'Live GPS · Vertical A',
-    h: 170, work: ['City rides', 'Outstation drop'],
+    from: 40, hue: 'from-indigo-400 to-blue-500',
+    work: ['City rides', 'Outstation drop'],
   },
 ];
+
+export const initials = (name) =>
+  name.replace(/^(Dr\.?\s*)/i, '').split(' ').slice(0, 2).map((w) => w[0]).join('').toUpperCase();
